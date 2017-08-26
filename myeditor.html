@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/edit.css"/>
+		<link rel="shortcut icon" href="img/icecream-07.png" />
+	</head>
+	<body>
+		<p class="func">
+				<select name="txt" class="txt">
+					<optgroup label="文本类型">
+						<option value="">文本</option>
+						<option value="p" >普通文本</option>
+						<option value="h1" >h1</option>
+						<option value="h2" >h2</option>
+						<option value="h3" >h3</option>
+						<option value="h4" >h4</option>
+						<option value="h5" >h5</option>
+						<option value="h6" >h6</option>
+					</optgroup>
+				</select>
+				<select name="list" class="list">
+					<option value="">列表</option>
+					<option value="ul" >无序</option>
+					<option value="ol">有序</option>
+				</select>
+				<button class="img">插入图片</button>
+				<button class="b">加粗</button>
+				<button class="i">倾斜</button>
+				<button class="code">插入代码</button>
+				<button class="color active">颜色</button>
+				<button class="underline">下划线</button>
+				<button class="link">链接</button>
+				<select name="justify" class="justify">
+					<optgroup label="对齐方式">
+					<option value="left">左对齐</option>
+					<option value="center">居中对齐</option>
+					</optgroup>
+				</select>
+			</p>
+		<div id="edit">
+			<div id="richeditwrap">
+				<div id="richedit" contenteditable="true"></div>
+			</div>
+			
+			<button class="send">发送</button><input type="text" placeholder="类别" />
+			<!--<div id="outer">
+				<div id="inner">
+				</div>
+			</div>-->
+		</div>
+		<div class="insert">
+			<h4>插入代码</h4>
+			<textarea class="insert-code"></textarea><br />
+			<input type="button" value="插入" class="insert-code-btn" />
+			<input type="button" value="取消" class="cancelBtn" />
+		</div>
+		<div class="addLink">
+			<h4>插入链接</h4>
+			<input type="text" name="text" id="text" value="" placeholder="选中的文字将拥有这个链接"/>
+			<input type="button" value="确定" id="linkSure"/>
+			<input type="button" value="取消" class="cancelBtn" />
+		</div>
+		<div class="ban">
+			<h4>插入字体颜色</h4>
+			<input type="text" name="color" id="color" value="#CC3535" />
+			<input type="button" value="确定" id="colorSure" />
+			<input type="button" value="取消" class="cancelBtn" />
+		</div>
+		<div class="imgBan">
+			<h4>插入图片</h4>
+			<label>图片src:
+			<input type="text" name="color" id="img" value="img/01.jpg" /></label>
+			<input type="button" value="确定" id="imgSure" />
+			<input type="button" class="cancelBtn" value="取消" />
+		</div>
+		<script type="text/javascript" src="js/edit.js" ></script>
+	</body>
+</html>
