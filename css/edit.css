@@ -35,17 +35,18 @@ html,body{
 	padding: 0 10px;
 	overflow: hidden;
 	position: relative;
-	overflow: hidden;
+	overflow:hidden;	
 }
 
 #richedit{
 	padding: 0 10px;
 	width: 100%;
-	height:auto;
+	height:100%;
 	position: absolute;
 	left: 0;
 	top: 0;
 	outline: none;
+	overflow-y: scroll;
 }
 select{
 	background: #FFFFFF;
