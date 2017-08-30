@@ -233,7 +233,8 @@ function downFn(){
 }
 
 
-
+var scrollTop;
+var allHeight;
 
 addScroll(richedit,function (){
 	
