@@ -232,6 +232,15 @@ function downFn(){
 	//元素位置应该向上  top --
 }
 
+
+
+
+addScroll(richedit,function (){
+	
+},function(){
+	
+});
+
 //给元素obj添加鼠标滚轮事件
 function addScroll(obj,upFn,downFn){
 	obj.onmousewheel = fn;
