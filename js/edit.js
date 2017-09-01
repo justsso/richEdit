@@ -266,10 +266,13 @@ for(var i = 0; i < 256; i++) {
 		cxt.fillRect(i, j, 1, 1);
 	}
 }
-
+var colorCircle = document.querySelector('.colorCircle');
 canvas.onclick = function(e) {
 	var boundingbox = this.getBoundingClientRect();
-	
+	console.log(colorCircle);
+//	colorCircle.style.cssText = "position:fixed;left: "+ e.clientX - 5+"px; top:"+ e.clientY -5+"px;";
+	colorCircle.style.left = e.clientX - 5+"px";
+	colorCircle.style.top = e.clientY -5 +"px";
 	var mousex = e.clientX - boundingbox.left
 	var mousey = e.clientY - boundingbox.top
 

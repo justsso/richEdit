@@ -134,8 +134,8 @@ select{
 	position: fixed;
 	width: 10px;
 	height: 10px;
-	border-radius: 5px;
-	border: 1px solid white;
+	border-radius: 50%;
+	border: 2px solid white;
 	left: 0;
 	top: 0;
 }
