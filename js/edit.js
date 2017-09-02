@@ -5,20 +5,20 @@ window.onload = function() {
 	reset();
 }
 
-var richedit = document.getElementById("richedit");
+const richedit = document.getElementById("richedit");
 //功能性按钮
-var codeBtn = document.querySelector('.code');
-var bBtn = document.querySelector('.b');
-var underline = document.querySelector('.underline');
-var iBtn = document.querySelector('.i');
-var txt = document.querySelector('.txt');
-var list = document.querySelector('.list');
-var tlink = document.querySelector('.link');
-var send = document.querySelector('.send');
-var colorBtn = document.querySelector('.color');
-var imgBtn = document.querySelector('.img');
+const codeBtn = document.querySelector('.code');
+const bBtn = document.querySelector('.b');
+const underline = document.querySelector('.underline');
+const iBtn = document.querySelector('.i');
+const txt = document.querySelector('.txt');
+const list = document.querySelector('.list');
+const tlink = document.querySelector('.link');
+const send = document.querySelector('.send');
+const colorBtn = document.querySelector('.color');
+const imgBtn = document.querySelector('.img');
 
-var justify = document.querySelector('.justify');
+const justify = document.querySelector('.justify');
 list.onchange = function() {
 	switch(list.value) {
 		case "ol":
@@ -73,13 +73,13 @@ justify.onchange = function() {
 			break;
 	}
 }
-var insertSureBtn = document.querySelector('.insert-code-btn'); //确定插入代码
-var insertBan = document.querySelector('.insert'); //代码textarea
-var insertCode = document.querySelector('.insert-code'); //真正的代码
-var colorBan = document.querySelector('.ban'); //颜色板
-var colorText = document.getElementById("color");
-var colorSure = document.getElementById("colorSure");
-var linkBan = document.querySelector('.addLink');
+const insertSureBtn = document.querySelector('.insert-code-btn'); //确定插入代码
+const insertBan = document.querySelector('.insert'); //代码textarea
+const insertCode = document.querySelector('.insert-code'); //真正的代码
+const colorBan = document.querySelector('.ban'); //颜色板
+const colorText = document.getElementById("color");
+const colorSure = document.getElementById("colorSure");
+const linkBan = document.querySelector('.addLink');
 var linkSure = document.getElementById("linkSure");
 var imgSrc = document.getElementById("img");
 var imgSure = document.getElementById("imgSure");
@@ -266,6 +266,10 @@ for(var i = 0; i < 256; i++) {
 		cxt.fillRect(i, j, 1, 1);
 	}
 }
+
+
+
+
 var colorCircle = document.querySelector('.colorCircle');
 canvas.onclick = function(e) {
 	var boundingbox = this.getBoundingClientRect();
