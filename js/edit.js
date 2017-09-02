@@ -80,11 +80,11 @@ const colorBan = document.querySelector('.ban'); //颜色板
 const colorText = document.getElementById("color");
 const colorSure = document.getElementById("colorSure");
 const linkBan = document.querySelector('.addLink');
-var linkSure = document.getElementById("linkSure");
-var imgSrc = document.getElementById("img");
-var imgSure = document.getElementById("imgSure");
-var imgBan = document.querySelector('.imgBan');
-var imgCancel = document.getElementById("imgCancel");
+const linkSure = document.getElementById("linkSure");
+const imgSrc = document.getElementById("img");
+const imgSure = document.getElementById("imgSure");
+const imgBan = document.querySelector('.imgBan');
+const imgCancel = document.getElementById("imgCancel");
 //确定代码
 insertSureBtn.onclick = function() {
 	insertBan.style.display = "none";
